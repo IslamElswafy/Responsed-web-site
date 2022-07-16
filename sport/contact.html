@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>contact form</title>
+<head>
+    <script src="javascript.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/suduco.png" type="image/x-icon" />
+</head>
+<body>
+<div id="tmeplatemo_container">
+    <div id="templatemo_menu">
+        <ul>
+            <li><a href="home.html" class="current">Home</a></li>
+            <li><a href="sport.html">sport</a></li>
+            <li><a href="politics.html">politics</a></li>
+            <li><a href="gllary.html">Gallery</a></li>
+            <li><a href="contact.html" class="last">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="templatemo_header_01">
+
+        <div id="site_title">News <span>Your news  is here </span></div>
+    </div>
+    <form action="#" onsubmit="go2(event)">
+        <h1>contact</h1>
+        <div class="icon">
+        </div>
+        <div class="formcontainer">
+            <div class="container">
+                <label id="lab" ><strong>first name</strong></label>
+                <input type="text" placeholder="Enter firstname" name="uname" id="first_name" required onblur="correct_name(this)">
+                <label id="lab2" ><strong>last name</strong></label>
+                <input type="text" placeholder="Enter lastname" name="uname" required id="last_name" onblur="correct_name2(this)">
+                <label id="mail2"><strong>E-mail</strong></label>
+                <input type="text" placeholder="Enter E-mail" name="mail" id="mail" required onblur="correct_mail(this)">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+            <a href="mailto:hamdyadam543@.com" class="submit">Send Email</a>
+            <br><br>
+            <button type="submit"><strong>Send Email</strong></button>
+        </div>
+    </form>
+    <div id="templatemo_footer">
+        Copyright © 2048 <a href="#"> news</a> | <a href="#" target="_parent">go to new news</a>
+    </div>
+</div>
+<br>
+
+</body>
+</html>
